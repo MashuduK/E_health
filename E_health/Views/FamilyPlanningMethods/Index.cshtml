@@ -1,0 +1,27 @@
+﻿@model IEnumerable<E_health.Models.FamilyPlanning.FamilyPlanningMethod>
+
+<h1>Family Planning Methods</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Effectiveness</th>
+            <th>Side Effects</th>
+            <th>Risks</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Effectiveness</td>
+                <td>@item.SideEffects</td>
+                <td>@item.Risks</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+﻿@model E_health.Models.FamilyPlanning.FamilyPlanningGoal
+
+<div class="form-group">
+    <label asp-for="DesiredNumberOfChildren" class="control-label"></label>
+    <input asp-for="DesiredNumberOfChildren" class="form-control" />
+    <span asp-validation-for="DesiredNumberOfChildren" class="text-danger"></span>
+</div>
+<!-- Include form fields for other properties here -->
+<div class="form-group">
+    <input type="submit" value="Save" class="btn btn-primary" />
+</div>
